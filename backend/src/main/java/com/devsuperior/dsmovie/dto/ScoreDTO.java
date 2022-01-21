@@ -1,5 +1,6 @@
 package com.devsuperior.dsmovie.dto;
 
+
 public class ScoreDTO {
 	private Long movieId;
 	private String email;

@@ -1,5 +1,4 @@
 package com.devsuperior.dsmovie.entities;
-
 import java.util.HashSet;
 import java.util.Set;
 
@@ -9,6 +8,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
 
 @Entity
 @Table(name = "tb_movie")

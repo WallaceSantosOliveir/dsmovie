@@ -1,5 +1,4 @@
 package com.devsuperior.dsmovie.services;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -41,9 +40,10 @@ public class ScoreService {
 		score.setUser(user);
 		score.setValue(dto.getScore());
 		
-		double sum = 0.0;
+		
 		score = scoreRepository.saveAndFlush(score);
 		
+		double sum = 0.0;		
 		for (Score s : movie.getScores()) {
 			sum = sum + s.getValue();
 		}
